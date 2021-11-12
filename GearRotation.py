@@ -17,7 +17,7 @@ while True:
     imgG2 = imgG1.copy()
 
     val = cv2.getTrackbarPos("Speed", "Parameters" )
-
+    print(val)
     imgG1 = cvzone.rotateImage(imgG1, angle+25)
     imgG2 = cvzone.rotateImage(imgG2, -angle)
     angle+=val
